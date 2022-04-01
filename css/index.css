@@ -1,0 +1,26 @@
+/* Site Wrap */
+
+.site-wrap {
+    display: flex;
+}
+
+body {
+    margin: 0px;
+}
+
+/* Nav Styles */
+
+.nav {
+    background-color: black;
+    color: white;
+}
+
+.nav > ul {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.nav > img {
+    width: 544px;
+}
