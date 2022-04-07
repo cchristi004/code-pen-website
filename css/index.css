@@ -1,12 +1,12 @@
 body {
-    background-image: linear-gradient(45deg, white, grey);
+    background-image: linear-gradient(133deg, grey, black);
+    color: rgb(182, 176, 176);
 }
 
 /* Site Wrap */
 
 .site-wrap {
     display: grid;
-     
 }
 
 body {
@@ -18,6 +18,7 @@ body {
 .nav {
     background-color: black;
     color: white;
+    font-size: 20px;
 }
 
 .nav > .btns {
@@ -26,7 +27,7 @@ body {
     list-style: none;
 }
 
-.nav > .btns > p {
+.nav-btn {
     background-color: rgb(85, 81, 81);
     border: 4px solid black;
     color: white;
@@ -47,4 +48,24 @@ body {
 
 .nav > img {
     width: 566px;
+}
+
+/* Content Styles */
+
+.content {
+    font-size: 20px;
+}
+
+/* Misc Styles */
+
+.green-btn {
+    padding: 15px;
+    background-color: rgb(63, 146, 63);
+    color: black;
+}
+
+.black-btn {
+    padding: 15px;
+    background-color: black;
+    color: white;
 }
