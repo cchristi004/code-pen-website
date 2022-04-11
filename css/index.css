@@ -53,7 +53,8 @@ body {
 /* Content Styles */
 
 .content {
-    font-size: 20px;
+    font-size: 33px;
+    text-align: center;
 }
 
 /* Misc Styles */
