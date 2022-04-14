@@ -66,7 +66,7 @@ body {
     text-align: center;
 }
 
-/* Btn Styles */
+/* Green & Black Btn Styles */
 
 .green-btn {
     padding: 15px;
@@ -74,11 +74,12 @@ body {
     border: 2px solid black;
     color: black;
     font-size: 33px;
+    width: 250px;
 }
 
 .green-btn:hover {
     background-color: black;
-    color: green;
+    color: rgb(76, 182, 76);;
     border: 2px solid rgb(76, 182, 76);
 }
 
@@ -88,6 +89,7 @@ body {
     border: 2px solid rgb(76, 182, 76);
     color: rgb(76, 182, 76);
     font-size: 33px;
+    width: 250px;
 }
 
 .black-btn:hover {
@@ -135,6 +137,10 @@ body {
 
 @media only screen and (min-width: 666px) {
     /* Nav Style */
+
+    .nav {
+        height: 120px;
+    }
 
     .nav > .logo > img {
         width: 300px;
