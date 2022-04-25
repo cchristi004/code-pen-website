@@ -75,6 +75,7 @@ body {
     color: black;
     font-size: 33px;
     width: 250px;
+    text-align: center;
 }
 
 .green-btn:hover {
@@ -136,34 +137,90 @@ body {
 /* Media Query For Desktop*/
 
 @media only screen and (min-width: 666px) {
+    /* Site Wrap Grid */
+    
+    .site-wrap {
+        display: grid;
+        grid-template-rows: 3;
+        grid-template-columns: 2;
+        grid-template-areas:
+            'nav nav'
+            'content codepen-img'
+            'boxes boxes';
+    }
+    
     /* Nav Style */
 
     .nav {
-        height: 120px;
-    }
-
-    .nav > .logo > img {
-        width: 300px;
+        height: 140px;
+        grid-area: nav;
+        display: grid;
+        grid-template-rows: 1;
+        grid-template-columns: 3;
+        grid-template-areas:
+            'logo explore nav-btns';
     }
 
     .nav > .logo {
-        flex-direction: column;
+        grid-area: logo;
+    }
+
+    .nav > .logo > img {
+        height: 50%;
+        width: 350px;
+    }
+
+    .nav > .nav-explore > ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav > .nav-explore > p {
+        display: flex;
+        justify-content: flex-start;
     }
 
     .nav > .nav-explore {
         grid-area: explore;
     }
 
-    .nav > .nav-explore > ul {
-        display: flex;
+    .nav > .btns > .nav-btns {
+        grid-area: nav-btns;
+        display: inline;
     }
 
-    .nav > .nav-explore {
-        display: grid;
-        grid-template-rows: 2;
-        grid-template-columns: 4;
-        grid-template-areas:
-            'explore . . .'
-            'other other other other';
+    /* Button Styles */
+
+    .green-btn {
+        display: inline;
+    }
+
+    .black-btn {
+        display: inline;
+    }
+
+    /* Content Styles */
+
+    .content {
+        grid-area: content;
+    }
+
+    .content > p {
+        font-size: 45px;
+        text-align: left;
+        margin-left: 45px;
+    }
+
+    /* CodePen Image */
+
+    .codepen-img {
+        grid-area: codepen-img;
+    }
+
+    /* Footer Styles */
+
+    .footer > .boxes {
+        display: flex;
+        justify-content: space-around;
     }
 }
