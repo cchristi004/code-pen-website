@@ -125,7 +125,8 @@ body {
     margin: 0px;
     text-align: center;
     border: 1px solid white;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(41, 40, 40);
+    color: white;
 }
 
 /* Absolutely Nothing */
@@ -146,7 +147,8 @@ body {
         grid-template-areas:
             'nav nav'
             'content codepen-img'
-            'boxes boxes';
+            'footer footer'
+            'nothing nothing';
     }
     
     /* Nav Style */
@@ -163,10 +165,12 @@ body {
 
     .nav > .logo {
         grid-area: logo;
+        display: flex;
+        align-items: center;
     }
 
     .nav > .logo > img {
-        height: 50%;
+        height: 45%;
         width: 350px;
     }
 
@@ -186,7 +190,11 @@ body {
 
     .nav > .btns > .nav-btns {
         grid-area: nav-btns;
-        display: inline;
+    }
+
+    .nav > .btns {
+        align-items: center;
+        height: 50%;
     }
 
     /* Button Styles */
@@ -219,8 +227,20 @@ body {
 
     /* Footer Styles */
 
-    .footer > .boxes {
+
+
+    .footer {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        position: relative;
+        top: 200px;
+        font-size: 33px;
+        grid-area: footer;
+    }
+
+    /* Absolutely Nothing */
+
+    .absolutely-nothing {
+        grid-area: nothing;
     }
 }
